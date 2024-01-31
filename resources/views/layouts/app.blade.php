@@ -8,12 +8,16 @@
     @yield('head-content')
 </head>
 <body>
+
+    <!-- include tutto ciò che scrivo nel file partials.header  -->
     @include('partials.header')
 
     <main>
+        <!-- yield offre la possibilità di essere sostituito -->
         @yield('main-content')
     </main>
 
+    <!-- include tutto ciò che scrivo nel file partials.footer  -->
     @include('partials.footer')
 </body>
 </html>
